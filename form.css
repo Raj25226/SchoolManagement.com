@@ -14,6 +14,10 @@ body{
     padding-right: 10%;
 }
 
+hr{
+    border: 2px solid rgba(0, 204, 255, 0.692);
+}
+
 .inner{
     padding: 30px;
     background-color: rgba(15, 116, 90, 0.74);
