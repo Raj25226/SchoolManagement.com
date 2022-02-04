@@ -1,171 +1,205 @@
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 body{
-    padding: 40px;
     font-family: 'Times New Roman', Times, serif;
-    border: 10px solid rgb(98, 162, 199);
-    background-color: rgb(0, 0, 0);
 }
 
-.division{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.image{
-    border-radius: 50px;
-}
-
-hr{
-    border: 2px solid rgba(0, 204, 255, 0.692);
-}
-
-header{
-    border-radius: 5px;
-    border-color: yellow;
-    padding: 40px;
-    color:hsl(54, 94%, 50%);
-    text-decoration: none;
-}
-
-.outer{
-    background-image: url(media/About.jpeg);
-    height: 800px;
-}
-
-.outer h1 {
-    padding-top: 80px;
+.header{
+    background-color: rgb(6, 57, 70);
+    padding: 50px;
     text-align: center;
+    color: honeydew;
+}
+
+h1{
     font-size: 40px;
-    color: rgb(4, 250, 156);
 }
 
-hr{
-    color: lightcoral;
-}
-
-#h{
-    opacity: 1;
-}
-.outer h4 {
-    padding-bottom: 80px;
-    text-align: center;
-    font-size: 20px;
-    color: rgb(3, 250, 238);
-}
-
-.xyz{
-    color:hsl(54, 94%, 50%);
-    text-decoration: none;
-}
-
-.xyz h1:hover{
-    color: rgb(14, 2, 7);
-}
-
-nav {
-    background-color: rgb(94, 82, 41);
+nav{
+    background-color: rgb(3, 12, 14);
     overflow: hidden;
-    border-radius: 5px;
-    margin-bottom: 50px;
+    display: flex;
 }
 
-nav a {
-    text-decoration: none;
+nav a{
     padding: 20px;
-    padding-right: 43px;
-    padding-left: 43px;
-    text-align: center;
+    display: block;
+    text-decoration: none;
     float: left;
-    color: rgb(245, 181, 7);
+    color: lightcyan;
 }
 
 nav a:hover{
-    color: rgb(5, 2, 0);
-    background-color: rgba(135, 100, 231, 0.644);
+    background-color: lightcyan;
+    color: black;
 }
 
-.inner{
+.contact{
+    margin-left: auto;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+main{
     padding: 30px;
-    background-color: rgba(15, 116, 90, 0.74);
-    color:hsl(54, 94%, 50%);
+    display:flex;
+    flex-direction: column;
 }
 
-h2 {
-    text-align: center;
-    font-size: 20px;
-    color: rgb(3, 250, 238);
-    padding: 20px;
-}
-
-/* nav a:visited{
-    color: tomato;
-} */
-
-section {
-    background-color: rgba(100, 101, 102, 0.979);
-    text-align: center;
+.division header{
+    background-color: rgb(37, 73, 37);
+    color: olive;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container{
     background-color: grey;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightblue;
-    border-radius: 4px;
-    box-sizing:border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
-/* section:nth-child(even) {
-    background-color: rgb(44, 77, 97);
+
+.inside h2 span{
+    font-size: 25px;
+    background-color: darkgoldenrod;
+    color: black;
+    padding: 20px 55px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.inside{
+    display: flex;
+    flex-direction: column;
+}
+
+span { 
+    display: flex; 
+    justify-content: center;
+}
+
+h2{
+    padding: 20px;
+}
+  
+.carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+  
+  /* cell number */
+/* .carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
 } */
 
-section {
-    min-height: 100vh;
+.in{
+    display: flex;
+    overflow: hidden;
+    justify-content: center
 }
 
-video {
-    padding: 10px;
+
+
+.parent{
+    display: flex;
+    flex-direction: column;
 }
 
-iframe {
-    height: 75vh;
+.child{
+    display: flex;
+    background-color: rgb(39, 41, 41);
+    padding: 40px;
 }
 
-img {
-    padding: 10px;
+.child p{
+    color: cadetblue;
 }
 
-section h5 {
-    margin: 40px;
+#fin{ 
+    display: flex;
+    margin-left: auto;
+    color: darkcyan;
+    padding-right: 50px;
+    overflow: hidden;
+    flex-direction: column;
 }
 
-footer{
-    padding: 100px;
-    padding-right: 400px;
-    padding-left: 300px;
-    height: 300px;
-    background-color: rgba(161, 158, 155, 0.342);
-    overflow:hidden;
-}
-
-footer p{
-    float: right;
-    text-align:left;
-    color: white;
+h3, img{
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 footer a{
-    padding-top: 50px;
-    float:left;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(253, 251, 251);
+    background-color: rgb(5, 4, 4);
+    padding: 40px;
+    text-decoration-line: none;
+    color: cornflowerblue;
 }
 
-footer p{
-    padding-left: 20px;
-    border-left: 4px solid rgb(147, 235, 147);
-    height: 110px;
-    right:100%;
-}  
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.2;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #ec1708bb;
+  }
+
+@media screen and (max-width:930px){
+
+    nav{
+        flex-direction: column;
+        text-align:center;
+    }
+    .contact{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .child{
+        flex-direction: column;
+        margin-right: auto;
+    }
+
+    #fin h3{
+        margin-top: 50px;
+    }
+    
+}
