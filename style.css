@@ -37,6 +37,15 @@ nav a:hover{
     color: black;
 }
 
+.header header a{
+    text-decoration: none;
+    color: white;
+}
+
+.header header a:hover{
+    color: brown;
+}
+
 .contact{
     margin-left: auto;
 }
@@ -51,18 +60,26 @@ main{
     flex-direction: column;
 }
 
+.division{
+    margin: 20px;
+}
+
 .division header{
     background-color: rgb(37, 73, 37);
     color: olive;
     padding: 30px;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .container{
     background-color: grey;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
 }
 
 .inside h2 span{
@@ -77,6 +94,12 @@ main{
 .inside{
     display: flex;
     flex-direction: column;
+}
+
+.notes{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 
 span { 
@@ -106,14 +129,15 @@ h2{
 .in{
     display: flex;
     overflow: hidden;
-    justify-content: center
+    justify-content: center;
+    flex-direction: row;
+    width: auto;
 }
-
-
 
 .parent{
     display: flex;
     flex-direction: column;
+    background-color: rgb(39, 41, 41);
 }
 
 .child{
@@ -144,7 +168,8 @@ footer a{
     background-color: rgb(5, 4, 4);
     padding: 40px;
     text-decoration-line: none;
-    color: cornflowerblue;
+    color: rgb(243, 102, 8);
+    text-align: center;
 }
 
 /* Style all font awesome icons */
@@ -180,6 +205,17 @@ footer a{
     background: #ec1708bb;
   }
 
+@media screen and (max-width:1200px) {
+
+    #ins{
+        flex-direction: column;
+        padding: 20px;
+        flex-wrap: nowrap;
+        margin: 50px;
+    }
+    
+}
+
 @media screen and (max-width:930px){
 
     nav{
@@ -188,6 +224,12 @@ footer a{
     }
     .contact{
         margin-left: 0;
+    }
+    .in{
+        flex-direction: column;
+    }
+    .in iframe{
+        padding: 20px;
     }
 }
 
